@@ -15,6 +15,11 @@ Note: the getApps.query.json and getApps.variables.json are found and loaded by 
 
 The program will complete silently but will create an output file `getApps_response.json` containing the results of the query.
 
+## next steps
+Should you want to persist the output, you can mount a volume locally as follows:
+`docker run -it -v $(pwd)/data:/data --rm aaronhmiller/ox-client`
+Then, simply `cp getApps_response.json /data` and your data will be persisted locally.
+
 ## building the client
 docker buildx build --no-cache --platform linux/amd64,linux/arm64 \
  -t <your_docker_hub_account>/ox-client --push .

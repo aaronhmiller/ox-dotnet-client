@@ -1,4 +1,4 @@
-FROM mcr.microsoft.com/dotnet/sdk:6.0
+FROM mcr.microsoft.com/dotnet/runtime:6.0
 RUN apt-get update \
  && apt-get install -y python3 python3-pip
 COPY ./ox-cli-prod /ox-cli-prod

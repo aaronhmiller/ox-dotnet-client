@@ -1,4 +1,4 @@
-# ox-se-dotnet-client
+# ox-dotnet-client
 For running API jobs
 
 ## running the client
